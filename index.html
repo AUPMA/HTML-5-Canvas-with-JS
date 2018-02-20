@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Particals Canvas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        canvas{
+            border: 2px solid black;
+        }
+    
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas">
+
+    </canvas>
+
+    <label for="ballcount">Ball Count 100 to 2000</label>
+    <input id="ballCount" type="range" min="100" max="2000" step="20" value="500" onchange="reload()">
+
+    <label for="">Max Ball Size 1 to 200 </label>
+    <input id="maxBallSize" type="range" min="1" max="200" step="20" value="40" onchange="reload()">
+
+    <label for="">Min Ball Size 1 to 200 </label>
+    <input id="minBallSize" type="range" min="1" max="200" step="20" value="20" onchange="reload()">
+
+    <label for="">Mouse Radious 10 to 100 </label>
+    <input id="mouseRadious" type="range" min="10" max="100" step="5" value="30" onchange="reload()">
+
+    <button onclick="reset()">Reset</button>
+
+    <script src="canvas.js"></script>
+</body>
+</html>
